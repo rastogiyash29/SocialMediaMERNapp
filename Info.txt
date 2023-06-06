@@ -1,0 +1,30 @@
+Client Routes->
+/profile                    my profile
+/user/:userName           others profile
+
+
+mongo-> yashrastogi2904 y7DewgudxtLR9jpD
+
+Server Routes->
+Auth-> auth/
+router.post('/signup',authController.signUpController);
+router.post('/login',authController.loginController);
+router.post('/logout',authController.logOutController);
+router.post('/refresh',authController.refreshAccessTokenController);
+
+Post->  post/
+router.post('/all',requireUser, postController.getAllPosts);
+router.post('/get',requireUser, postController.getPostById);
+router.post('/delete',requireUser, postController.deletePostById);
+router.post('/create',requireUser, postController.createPost);
+router.post('/update',requireUser, postController.updatePost);
+router.post('/myposts',requireUser, postController.getAllMyPosts);
+router.post('/postsofuser',requireUser, postController.getAllPostByUserId);
+
+User->  user/
+router.post('/follow',requireUser,userController.followUnfollowUser);
+router.post('/get',requireUser,userController.getUserById);
+router.post('/myfollowers',requireUser,userController.getAllMyFollowers);
+router.post('/myfollowings',requireUser,userController.getAllMyFollowings);
+
+

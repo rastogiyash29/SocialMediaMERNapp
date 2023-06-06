@@ -1,0 +1,86 @@
+.mode{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    margin: 2rem 10vw;
+    background-color: azure;
+    border-radius: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+    .mode { grid-template-columns: repeat(2, 1fr); }
+}
+
+.createpost{
+    display: flex;
+    flex-direction: column;
+    h1 {
+        margin: 5px auto;
+        text-align: center;
+        color: #15024c;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .image-preview-container {
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 3rem;
+        border-radius: 20px;
+    }
+    
+    .image-preview-container img {
+        width: 100%;
+        display: none;
+        margin-bottom: 30px;
+    }
+    .image-preview-container input {
+        display: none;
+    }
+    
+    .image-preview-container label {
+        display: block;
+        width: 45%;
+        height: 45px;
+        margin-left: 25%;
+        text-align: center;
+        background: #8338ec;
+        color: #fff;
+        font-size: 15px;
+        text-transform: Uppercase;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.form-side{
+    p{
+        margin: 2px;
+        font-size: 1.2rem;
+        color: #15024c;
+    }
+
+    input{
+        width: 100%;
+        height: 50px;
+        background: #3289ed2b;
+        justify-content: center;
+        display: flex;
+        margin: 20px auto;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }  
+}

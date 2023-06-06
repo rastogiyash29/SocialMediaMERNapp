@@ -1,0 +1,61 @@
+.errorpage_container{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    color: #444;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.errorpage_container h1 {
+    font-size: 50px;
+    line-height: 60px;
+    color: #444;
+  }
+  .errorpage_container span {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .errorpage_container .container {
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+  }
+  .errorpage_container .grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    grid-gap: 50px;
+  }
+  .errorpage_container .colmun-left {
+    text-align: left;
+  }
+  .errorpage_container .colmun-right {
+    text-align: right;
+  }
+  .errorpage_container .px-spc-b-20 {
+    padding-bottom: 20px;
+  }
+  .errorpage_container button.go-home {
+    padding: 5px 20px;
+    background: #ffa000;
+    border: transparent;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    margin: 20px 0;
+    color: #fff;
+  }
+  .errorpage_container button.go-home i {
+    color: #fff;
+  }
+  .errorpage_container img {
+    display: block;
+    width: 100%;
+  }
