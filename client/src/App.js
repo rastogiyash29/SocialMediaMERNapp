@@ -15,14 +15,15 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      <Route path="*" element={<ErrorPage/>}/>
       <Route path="/home" element={<Posts/>}/>
+      <Route path="/" element={<Posts/>}/>
       <Route path="/search" element={<SearchUser/>}/>
       <Route path="/myprofile" element={<MyProfile/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<SignUp/>}/>
       <Route path="/createpost" element={<CreatePost/>}/>
       <Route path="/user" element={<ProfilePage/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
     </Routes>
     </BrowserRouter>
   );
