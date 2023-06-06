@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { KEY_ACCESS_TOKEN, getItem } from './localStorageManager';
 
-const base_url='http://localhost:4001';
+// const base_url='http://localhost:4001';
+const base_url='https://social-media-aaqk.onrender.com';
 
 export const axiosClient=axios.create({
     baseURL: base_url,
