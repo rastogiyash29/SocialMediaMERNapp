@@ -11,7 +11,12 @@ app.use(express.json());
 app.use(morgan('common'));
 app.use(cors({
     credentials:true,
-    origin:'http://localhost:3000'
+    origin:[
+        'http://localhost:3000',
+        'https://social-media-mer-napp.vercel.app',
+        'https://luminous-licorice-802cc4.netlify.app',
+        'https://social-media-quotify.onrender.com'
+    ]
 }));
 app.use('/',indexRouter);
 
