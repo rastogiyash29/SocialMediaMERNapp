@@ -14,8 +14,8 @@ app.use(cors({
     origin:[
         'http://localhost:3000',
         'https://social-media-mer-napp.vercel.app',
-        'https://luminous-licorice-802cc4.netlify.app',
-        'https://social-media-quotify.onrender.com'
+        'https://social-media-quotify.onrender.com',
+        'https://social-media-quotify.netlify.app'
     ]
 }));
 app.use('/',indexRouter);
