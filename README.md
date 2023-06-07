@@ -7,7 +7,7 @@
 •	Built proper authentication using Tokenization<br/>
 •	Built a stunning UI design using ReactJs<br/>
 
-live-link: 
+live-link: https://social-media-mer-napp.vercel.app/login
 
 # Screenshots
 1. Login Screen<br/>
